@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="数字当てゲーム">
+        <meta name="author" content="マエザワゲンキ">
+        <title>数字当てゲーム</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="difficulty" id="difficultyover">
+            <div class="difficultyModal">
+                <p id="select">難易度を選んでね</p>
+                <button id="easy">簡単</button>
+                <button id="normal">普通</button>
+                <button id="hard">難しい</button>
+            </div>
+        </div>
+        
+        <div class="ab" style="text-align:center;">
+            <h1>１～１００の数字を入力して答えの数字を当てよう！</h1>
+            <input type="number" id="numberBox" class="box" min="1" max="100" placeholder="数字を入力">
+            <button id="decision">決定</button>
+        </div>
+
+    <div class="modalBox">
+
+        <div class="over" id="modalover">
+            <div class="modal">
+                <p id="modalText">結果を表示</p>
+                <button id="resetModal">もう一回</button>
+            </div>
+        </div>
+
+        <div class="over2" id="modalover2">
+            <div class="modal2">
+                <p id="modalText2">不正解</p>
+                <button id="okModal">OK</button>
+            </div>
+        </div>
+    </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
